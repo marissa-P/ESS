@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">ESS: Junior Agricultural Mechanics</string>
+    <string name="prompt">Select Vehicle </string>
+    <string-array name="txtRibbon">
+        <item>Pick A Ribbon Color</item>
+        <item>Red</item>
+        <item>Blue</item>
+        <item>White</item>
+    </string-array>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="placing">placing</string>
+    <string name="total_points">Total Points</string>
+    <string name="Workmanship" />
+    <string name="Knowledge" />
+    <string name="Documentation" />
+</resources>

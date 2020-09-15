@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:textAlignment="viewStart"
+    tools:context=".CSS">
+
+    <LinearLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/holo_red_dark"
+        app:layout_constraintBottom_toTopOf="@+id/listViewOne"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Final"
+            android:textColor="@android:color/background_light"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Entry #"
+            android:textColor="@android:color/background_light"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Project Name"
+            android:textColor="@android:color/background_light"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Work."
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/background_light"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Design"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/background_light"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Doc."
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/background_light"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Pres."
+            android:textAlignment="textStart"
+            android:textColor="@android:color/background_light"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Diff."
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/background_light"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Safety"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/background_light"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Total"
+            android:textAlignment="textStart"
+            android:textColor="@android:color/background_light"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Ribbon"
+            android:textAlignment="textStart"
+            android:textColor="@android:color/background_light"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Judge #"
+            android:textAlignment="textStart"
+            android:textColor="@android:color/background_light"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Notes"
+            android:textColor="@android:color/background_light"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnDocumentationSortOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:background="@drawable/my_button_bg"
+        android:text="DOCUMENTATION"
+        app:layout_constraintBottom_toBottomOf="@+id/btnKnowledgeSortOne"
+        app:layout_constraintStart_toEndOf="@+id/btnKnowledgeSortOne"
+        app:layout_constraintTop_toTopOf="@+id/btnKnowledgeSortOne"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnTotalSortOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="251dp"
+        android:layout_marginBottom="54dp"
+        android:background="@drawable/my_button_bg"
+        android:text="TOTAL POINTS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnWorkmanshipSortOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:background="@drawable/my_button_bg"
+        android:text="WORKMANSHIP"
+        app:layout_constraintBottom_toBottomOf="@+id/btnTotalSortOne"
+        app:layout_constraintStart_toEndOf="@+id/btnTotalSortOne"
+        app:layout_constraintTop_toTopOf="@+id/btnTotalSortOne"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnKnowledgeSortOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:background="@drawable/my_button_bg"
+        android:text="KNOWLEDGE"
+        app:layout_constraintBottom_toBottomOf="@+id/btnWorkmanshipSortOne"
+        app:layout_constraintStart_toEndOf="@+id/btnWorkmanshipSortOne"
+        app:layout_constraintTop_toTopOf="@+id/btnWorkmanshipSortOne"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ListView
+        android:id="@+id/listViewOne"
+        android:layout_width="1280dp"
+        android:layout_height="564dp"
+        android:layout_marginStart="4dp"
+        android:background="@color/design_default_color_primary_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout1" />
+
+    <Button
+        android:id="@+id/txtFinalCSS"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/my_button_bg"
+        android:text="FINAL CSS"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

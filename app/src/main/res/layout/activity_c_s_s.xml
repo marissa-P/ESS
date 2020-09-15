@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    tools:context=".CSS">
+
+
+    <LinearLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="895dp"
+        android:layout_height="140dp"
+        android:background="@android:color/holo_red_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="51dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Final"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Entry #"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="189dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Project Name"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="136dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="5dp"
+            android:rotation="-90"
+            android:text="Workmanship"
+            android:textColor="@android:color/background_light"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="5dp"
+            android:rotation="270"
+            android:text="Design"
+            android:textColor="@android:color/background_light"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="5dp"
+            android:rotation="270"
+            android:text="Documentation"
+            android:textColor="@android:color/background_light"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            tools:rotation="270" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="5dp"
+            android:rotation="270"
+            android:text="Presentation"
+            android:textColor="@android:color/background_light"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="5dp"
+            android:rotation="270"
+            android:text="Difficulty "
+            android:textColor="@android:color/background_light"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="5dp"
+            android:rotation="270"
+            android:text="Safety"
+            android:textColor="@android:color/background_light"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="5dp"
+            android:rotation="270"
+            android:text="Total"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="5dp"
+            android:rotation="270"
+            android:text="Ribbon"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="5dp"
+            android:rotation="270"
+            android:text="Team Judge #"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="186dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:gravity="center"
+            android:padding="5dp"
+            android:rotation="270"
+            android:text="Notes"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnDocumentationSortOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="300dp"
+        android:background="@drawable/my_button_bg"
+        android:text="DOCUMENTATION"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toEndOf="@+id/btnKnowledgeSortOne" />
+
+    <Button
+        android:id="@+id/btnKnowledgeSortOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:background="@drawable/my_button_bg"
+        android:text="KNOWLEDGE"
+        app:layout_constraintBottom_toBottomOf="@+id/btnWorkmanshipSortOne"
+        app:layout_constraintStart_toEndOf="@+id/btnWorkmanshipSortOne"
+        app:layout_constraintTop_toTopOf="@+id/btnWorkmanshipSortOne"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnTotalSortOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginBottom="300dp"
+        android:background="@drawable/my_button_bg"
+        android:text="TOTAL POINTS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnWorkmanshipSortOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:background="@drawable/my_button_bg"
+        android:text="WORKMANSHIP"
+        app:layout_constraintBottom_toBottomOf="@+id/btnTotalSortOne"
+        app:layout_constraintStart_toEndOf="@+id/btnTotalSortOne"
+        app:layout_constraintTop_toTopOf="@+id/btnTotalSortOne"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ListView
+        android:id="@+id/listViewOne"
+        android:layout_width="907dp"
+        android:layout_height="838dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="59dp"
+        android:background="@color/design_default_color_primary_dark"
+        app:layout_constraintBottom_toTopOf="@+id/btnDocumentationSortOne"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/txtFinalCSS"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/my_button_bg"
+        android:text="FINAL CSS"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

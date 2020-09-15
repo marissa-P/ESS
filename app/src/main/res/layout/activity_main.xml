@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:backgroundTint="@android:color/darker_gray"
+    android:textAlignment="center"
+    android:textDirection="firstStrongRtl"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="274dp"
+    tools:layout_editor_absoluteY="430dp">
+
+    <RadioGroup
+        android:id="@+id/radioGroup3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="42dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <RadioButton
+            android:id="@+id/rdbBlue"
+            android:layout_width="125dp"
+            android:layout_height="50dp"
+            android:background="@color/design_default_color_primary_dark"
+            android:text="BLUE"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rdbRed"
+            android:layout_width="125dp"
+            android:layout_height="50dp"
+            android:background="@android:color/holo_red_dark"
+            android:text="RED"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rdbWhite"
+            style="@android:style/Widget.CompoundButton.RadioButton"
+            android:layout_width="125dp"
+            android:layout_height="50dp"
+            android:background="@android:color/background_light"
+            android:checked="false"
+            android:text="WHITE"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="308dp"
+        android:text="SELECT A RIBBON"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtSchool"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/darker_gray"
+        android:backgroundTint="@android:color/darker_gray"
+        app:layout_constraintBottom_toTopOf="@+id/textView15"
+        app:layout_constraintStart_toStartOf="@+id/txtProjectName" />
+
+    <TextView
+        android:id="@+id/txtClassNumber"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:background="@android:color/darker_gray"
+        android:backgroundTint="@android:color/darker_gray"
+        app:layout_constraintBottom_toTopOf="@+id/txtProjectName"
+        app:layout_constraintStart_toStartOf="@+id/txtClassName" />
+
+    <TextView
+        android:id="@+id/txtDivision"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="259dp"
+        android:background="@android:color/darker_gray"
+        android:backgroundTint="@android:color/darker_gray"
+        app:layout_constraintBottom_toTopOf="@+id/txtClassName"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="385dp"
+        android:layout_marginBottom="8dp"
+        android:text="POINT #"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_Workmanship"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_Safety"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="175dp"
+        android:layout_marginBottom="24dp"
+        android:background="#ABD3D6"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup3"
+        app:layout_constraintStart_toEndOf="@+id/textView13" />
+
+    <EditText
+        android:id="@+id/txt_Design"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="24dp"
+        android:background="#ABD3D6"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txt_Doc"
+        app:layout_constraintStart_toStartOf="@+id/txt_Workmanship" />
+
+    <EditText
+        android:id="@+id/txt_Presentation"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="24dp"
+        android:background="#ABD3D6"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txt_Difficulty"
+        app:layout_constraintStart_toStartOf="@+id/txt_Difficulty" />
+
+    <EditText
+        android:id="@+id/txt_Difficulty"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="24dp"
+        android:background="#ABD3D6"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txt_Safety"
+        app:layout_constraintStart_toStartOf="@+id/txt_Safety" />
+
+    <EditText
+        android:id="@+id/txt_Doc"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="24dp"
+        android:background="#ABD3D6"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txt_Presentation"
+        app:layout_constraintStart_toStartOf="@+id/txt_Presentation" />
+
+    <EditText
+        android:id="@+id/txt_Workmanship"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="24dp"
+        android:background="#ABD3D6"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txt_Design"
+        app:layout_constraintEnd_toStartOf="@+id/txtPerWorkmanship" />
+
+    <TextView
+        android:id="@+id/txtTitleFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="AG MECH SCORING INPUT"
+        android:textColor="@android:color/background_light"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtClassName"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:background="@android:color/darker_gray"
+        android:backgroundTint="@android:color/darker_gray"
+        app:layout_constraintBottom_toTopOf="@+id/txtClassNumber"
+        app:layout_constraintStart_toStartOf="@+id/txtDivision" />
+
+    <TextView
+        android:id="@+id/txtProjectName"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:background="@android:color/darker_gray"
+        android:backgroundTint="@android:color/darker_gray"
+        app:layout_constraintBottom_toTopOf="@+id/txtSchool"
+        app:layout_constraintStart_toStartOf="@+id/txtClassNumber" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="WORKMANSHIP (MAX 30)"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintEnd_toEndOf="@+id/textView9"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="DIFFICULTY (MAX 5)"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView13"
+        app:layout_constraintStart_toStartOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="PRESENTATION (MAX 20)"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView12"
+        app:layout_constraintStart_toStartOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="370dp"
+        android:text="SAFETY (MAX 5)"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="DOC AND RESEARCH (MAX 20)"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintStart_toStartOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="DESIGN AND MAT. (MAX 20)"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintStart_toStartOf="@+id/textView8" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="171dp"
+        android:layout_height="116dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/my_button_bg"
+        android:backgroundTint="@android:color/background_light"
+        android:text="SUBMIT TO SUMMARY SHEET"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnInstruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@android:color/background_light"
+        android:text="INSTRUCTIONS"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTotal"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="484dp"
+        android:layout_marginBottom="75dp"
+        android:background="@android:color/background_light"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="368dp"
+        android:layout_marginBottom="75dp"
+        android:background="@android:color/background_light"
+        android:text="TOTAL"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="25dp"
+        android:text="ENTRY #"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView20"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <EditText
+        android:id="@+id/txtEntryMain"
+        android:layout_width="190dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="13dp"
+        android:background="@color/design_default_color_primary_dark"
+        android:backgroundTint="@color/design_default_color_primary_dark"
+        android:ems="10"
+        android:inputType="number|text"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/txtTeamJudge"
+        app:layout_constraintTop_toBottomOf="@+id/txtTeamJudge" />
+
+    <Button
+        android:id="@+id/btnRetrieve"
+        android:layout_width="136dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="180dp"
+        android:text="ENTER"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitleFinal" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="DIVISION"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintStart_toStartOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="PROJECT NAME"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="CLASS NAME"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="42dp"
+        android:text="SCHOOL "
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="CLASS NUMBER"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/txtPerWorkmanship"
+        android:layout_width="77dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="320dp"
+        android:layout_marginBottom="24dp"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtPerDesign"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txtPerDifficulty"
+        android:layout_width="77dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtPerSafety"
+        app:layout_constraintStart_toStartOf="@+id/txtPerPresentation" />
+
+    <TextView
+        android:id="@+id/txtPerPresentation"
+        android:layout_width="77dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtPerDifficulty"
+        app:layout_constraintStart_toStartOf="@+id/txtPerDoc" />
+
+    <TextView
+        android:id="@+id/txtPerDesign"
+        android:layout_width="77dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtPerDoc"
+        app:layout_constraintStart_toStartOf="@+id/txtPerWorkmanship" />
+
+    <TextView
+        android:id="@+id/txtPerDoc"
+        android:layout_width="77dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtPerPresentation"
+        app:layout_constraintStart_toStartOf="@+id/txtPerDesign" />
+
+    <TextView
+        android:id="@+id/txtPerSafety"
+        android:layout_width="77dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="19dp"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup3"
+        app:layout_constraintStart_toStartOf="@+id/txtPerDifficulty" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="192dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/stockshow" />
+
+    <EditText
+        android:id="@+id/txtTeamJudge"
+        android:layout_width="102dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/design_default_color_primary_dark"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView20"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitleFinal" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="187dp"
+        android:layout_marginTop="16dp"
+        android:text="TEAM JUDGE #"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitleFinal" />
+
+    <Button
+        android:id="@+id/btnClassSummary"
+        android:layout_width="157dp"
+        android:layout_height="132dp"
+        android:layout_marginTop="284dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/my_button_bg"
+        android:text="REVIEW SUMMARY "
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="591dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="12dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="NOTES:"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTime"
+        android:layout_width="118dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="43dp"
+        android:text="10:00"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnInstruction" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
